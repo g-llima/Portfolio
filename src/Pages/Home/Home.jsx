@@ -19,6 +19,11 @@ function Home() {
     canvas.height = window.innerHeight;
     canvas.style.background = "#252934";
 
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
     const c = canvas.getContext("2d");
 
     class Circle {
@@ -79,7 +84,7 @@ function Home() {
       }
     }
     animate();
-  });
+  }, []);
 
   return (
     <div className="home">
