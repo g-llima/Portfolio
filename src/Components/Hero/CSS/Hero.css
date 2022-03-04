@@ -52,6 +52,27 @@
           animation-play-state: paused;
 }
 
+.hero .content .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+}
+
+.hero .content .links i {
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  -webkit-animation: none;
+          animation: none;
+  color: var(--color-red);
+}
+
+.hero .content .links i:hover {
+  color: var(--color-beige);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);

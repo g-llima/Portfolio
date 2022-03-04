@@ -37,6 +37,22 @@
         animation-play-state: paused;
       }
     }
+    .links {
+      display: flex;
+      margin-top: 5rem;
+
+      i {
+        margin: 0 2rem;
+        font-size: 1.5rem;
+        animation: none;
+        color: var(--color-red);
+
+        &:hover {
+          color: var(--color-beige);
+          transform: scale(1.2);
+        }
+      }
+    }
   }
 }
 @keyframes pulse {

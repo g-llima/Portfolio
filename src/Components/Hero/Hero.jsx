@@ -95,6 +95,17 @@ function Hero() {
         <h1>GABRIEL LIMA</h1>
         <h2>WEB DEVELOPER</h2>
         <i className="far fa-arrow-alt-circle-down"></i>
+        <div className="links">
+          <a href="https://github.com/g-llima" target="_blank">
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gabriel-lima-462154228/"
+            target="_blank"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+        </div>
       </div>
     </div>
   );
