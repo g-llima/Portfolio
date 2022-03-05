@@ -28,7 +28,7 @@
 
 .hero .content h1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: var(--font-xlarge);
 }
 
 .hero .content h2 {
@@ -38,7 +38,7 @@
 
 .hero .content i {
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: var(--font-medium);
   -webkit-animation: pulse 4s infinite;
           animation: pulse 4s infinite;
   border-radius: 50%;
@@ -61,7 +61,7 @@
 
 .hero .content .links i {
   margin: 0 2rem;
-  font-size: 1.5rem;
+  font-size: var(--font-small);
   -webkit-animation: none;
           animation: none;
   color: var(--color-red);
@@ -105,7 +105,7 @@
 
 @media only screen and (max-width: 425px) {
   .hero .content h1 {
-    font-size: 4rem;
+    font-size: var(--font-large);
   }
 }
 /*# sourceMappingURL=Hero.css.map */
