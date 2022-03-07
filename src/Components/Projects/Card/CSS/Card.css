@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  width: 250px;
+  height: 320px;
+}
+
+.card .card__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card .card__content:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card .card__content .card__content__front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: var(--color-dark);
+  color: white;
+}
+
+.card .card__content .card__content__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: var(--color-navy);
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=Card.css.map */

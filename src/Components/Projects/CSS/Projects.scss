@@ -1,0 +1,12 @@
+.projects {
+  .projects__content {
+    max-width: 1400px;
+    margin: 10rem auto 0 auto;
+
+    h2 {
+      text-align: center;
+      font-size: var(--font-large);
+      color: var(--color-dark);
+    }
+  }
+}

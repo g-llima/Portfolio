@@ -18,14 +18,6 @@ const slidersList = [
     value: 70,
   },
   {
-    title: "Express",
-    value: 60,
-  },
-  {
-    title: "Node",
-    value: 60,
-  },
-  {
     title: "PHP",
     value: 50,
   },
