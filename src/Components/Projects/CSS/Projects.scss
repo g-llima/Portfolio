@@ -8,5 +8,11 @@
       font-size: var(--font-large);
       color: var(--color-dark);
     }
+
+    .projects__content__items {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
 }
