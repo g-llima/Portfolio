@@ -1,7 +1,7 @@
 .card {
   position: relative;
-  width: 250px;
-  height: 320px;
+  width: 300px;
+  height: 400px;
 
   .card__content {
     position: absolute;
@@ -19,8 +19,57 @@
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      background: var(--color-dark);
-      color: white;
+      color: var(--color-dark);
+      box-shadow: 2px 2px 3px 3px #dbdbdb;
+
+      .card__content__front__img {
+        width: 100%;
+        object-fit: cover;
+        height: 60%;
+        border-end-end-radius: 40%;
+      }
+
+      .card__content__front__title {
+        padding: 1rem 1rem 0 1rem;
+      }
+
+      .card__content__front__desc {
+        font-size: 14px;
+        padding: 1rem;
+      }
+
+      .card__content__front__topics {
+        padding: 0 1rem;
+
+        .card__content__front__topics__list {
+          font-size: 12px;
+          display: flex;
+          justify-content: space-between;
+
+          .card__content__front__topics__list__item {
+            padding: 2px 5px;
+          }
+
+          .html {
+            background: #e44d26;
+            color: white;
+          }
+
+          .css {
+            color: white;
+            background: #264de4;
+          }
+
+          .react {
+            color: white;
+            background: #4ad5ff;
+          }
+
+          .js {
+            background: #f7e018;
+          }
+        }
+      }
     }
     .card__content__back {
       position: absolute;
@@ -30,6 +79,7 @@
       background: var(--color-navy);
       color: white;
       transform: rotateY(180deg);
+      box-shadow: 2px 2px 3px 3px #dbdbdb;
     }
   }
 }

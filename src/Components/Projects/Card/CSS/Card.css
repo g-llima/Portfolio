@@ -1,7 +1,7 @@
 .card {
   position: relative;
-  width: 250px;
-  height: 320px;
+  width: 300px;
+  height: 400px;
 }
 
 .card .card__content {
@@ -25,8 +25,63 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: var(--color-dark);
+  color: var(--color-dark);
+  -webkit-box-shadow: 2px 2px 3px 3px #dbdbdb;
+          box-shadow: 2px 2px 3px 3px #dbdbdb;
+}
+
+.card .card__content .card__content__front .card__content__front__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60%;
+  border-end-end-radius: 40%;
+}
+
+.card .card__content .card__content__front .card__content__front__title {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.card .card__content .card__content__front .card__content__front__desc {
+  font-size: 14px;
+  padding: 1rem;
+}
+
+.card .card__content .card__content__front .card__content__front__topics {
+  padding: 0 1rem;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .card__content__front__topics__list__item {
+  padding: 2px 5px;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .html {
+  background: #e44d26;
   color: white;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .css {
+  color: white;
+  background: #264de4;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .react {
+  color: white;
+  background: #4ad5ff;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .js {
+  background: #f7e018;
 }
 
 .card .card__content .card__content__back {
@@ -39,5 +94,7 @@
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  -webkit-box-shadow: 2px 2px 3px 3px #dbdbdb;
+          box-shadow: 2px 2px 3px 3px #dbdbdb;
 }
 /*# sourceMappingURL=Card.css.map */

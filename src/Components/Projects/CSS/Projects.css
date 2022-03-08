@@ -3,7 +3,7 @@
   margin: 10rem auto 0 auto;
 }
 
-.projects .projects__content h2 {
+.projects .projects__content .projects__content__title {
   text-align: center;
   font-size: var(--font-large);
   color: var(--color-dark);

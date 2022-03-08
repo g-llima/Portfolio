@@ -7,7 +7,7 @@ function Projects() {
   return (
     <div className="projects">
       <div className="projects__content">
-        <h2>Projetos</h2>
+        <h2 className="projects__content__title">Projetos</h2>
         <div className="projects__content__items">
           <Card />
         </div>
