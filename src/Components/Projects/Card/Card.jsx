@@ -18,22 +18,31 @@ function Card() {
           </p>
           <div className="card__content__front__topics">
             <ul className="card__content__front__topics__list">
-              <li className="card__content__front__topics__list__item html">
+              <li className="card__content__front__topics__list__item HTML__CARD">
                 HTML
               </li>
-              <li className="card__content__front__topics__list__item css">
+              <li className="card__content__front__topics__list__item CSS__CARD">
                 CSS
               </li>
-              <li className="card__content__front__topics__list__item react">
+              <li className="card__content__front__topics__list__item REACT__CARD">
                 REACT
               </li>
-              <li className="card__content__front__topics__list__item js">
+              <li className="card__content__front__topics__list__item JavaScript__CARD">
                 JavaScript
               </li>
             </ul>
           </div>
         </div>
-        <div className="card__content__back">back</div>
+        <div className="card__content__back">
+          <div className="card__content__back__icons">
+            <a href="#" target="__blank">
+              <i className="fas fa-external-link"></i>
+            </a>
+            <a href="https://github.com/g-llima" target="__blank">
+              <i className="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

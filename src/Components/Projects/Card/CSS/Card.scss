@@ -50,22 +50,22 @@
             padding: 2px 5px;
           }
 
-          .html {
+          .HTML__CARD {
             background: #e44d26;
             color: white;
           }
 
-          .css {
+          .CSS__CARD {
             color: white;
             background: #264de4;
           }
 
-          .react {
+          .REACT__CARD {
             color: white;
             background: #4ad5ff;
           }
 
-          .js {
+          .JavaScript__CARD {
             background: #f7e018;
           }
         }
@@ -76,10 +76,34 @@
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      background: var(--color-navy);
-      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transform: rotateY(180deg);
       box-shadow: 2px 2px 3px 3px #dbdbdb;
+
+      .card__content__back__icons {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          i {
+            color: var(--color-dark);
+            font-size: var(--font-large);
+            transition: all 0.2s;
+
+            &:hover {
+              color: var(--color-red);
+              font-size: var(--font-xlarge);
+            }
+          }
+        }
+      }
     }
   }
 }
