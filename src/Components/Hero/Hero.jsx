@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import "./CSS/Hero.css";
 
 function getRandomColor() {
@@ -91,11 +92,14 @@ function Hero() {
   return (
     <div className="hero">
       <canvas ref={canvasRef}></canvas>
-      <div className="content">
+      <div className="hero__content">
         <h1>GABRIEL LIMA</h1>
         <h2>WEB DEVELOPER</h2>
-        <i className="far fa-arrow-alt-circle-down"></i>
-        <div className="links">
+        <Link to="#about">
+          <i className="fal fa-arrow-circle-down"></i>
+        </Link>
+
+        <div className="hero__content__links">
           <a href="https://github.com/g-llima" target="_blank">
             <i className="fab fa-github"></i>
           </a>

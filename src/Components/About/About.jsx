@@ -25,7 +25,7 @@ const slidersList = [
 
 function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about__big_triangle"></div>
       <div className="about__content">
         <div className="about__content__left">

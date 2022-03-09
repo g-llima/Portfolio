@@ -39,7 +39,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 10rem auto 0 auto;
+  margin: 15rem auto 0 auto;
 }
 
 .about .about__content .about__content__left {

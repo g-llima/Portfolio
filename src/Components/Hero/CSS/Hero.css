@@ -7,7 +7,7 @@
   background: var(--color-dark);
 }
 
-.hero .content {
+.hero .hero__content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,17 +26,21 @@
   color: var(--color-red);
 }
 
-.hero .content h1 {
+.hero .hero__content a {
+  color: var(--color-red);
+}
+
+.hero .hero__content h1 {
   text-align: center;
   font-size: var(--font-xlarge);
 }
 
-.hero .content h2 {
+.hero .hero__content h2 {
   color: var(--color-beige);
   text-align: center;
 }
 
-.hero .content i {
+.hero .hero__content i {
   margin-top: 2rem;
   font-size: var(--font-medium);
   -webkit-animation: pulse 4s infinite;
@@ -46,20 +50,20 @@
   transition: all 0.2s;
 }
 
-.hero .content i:hover {
+.hero .hero__content i:hover {
   color: var(--color-beige);
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
 
-.hero .content .links {
+.hero .hero__content .hero__content__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 5rem;
 }
 
-.hero .content .links i {
+.hero .hero__content .hero__content__links i {
   margin: 0 2rem;
   font-size: var(--font-small);
   -webkit-animation: none;
@@ -67,7 +71,7 @@
   color: var(--color-red);
 }
 
-.hero .content .links i:hover {
+.hero .hero__content .hero__content__links i:hover {
   color: var(--color-beige);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);

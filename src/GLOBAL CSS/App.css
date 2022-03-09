@@ -4,11 +4,11 @@
   --color-navy: #2d4263;
   --color-red: #c84b31;
   --color-beige: #ecdbba;
-  --font-xlarge: 5rem;
+  --font-xlarge: 4.6rem;
   --font-large: 3rem;
   --font-medium: 2rem;
-  --font-small: 1.5rem;
-  --font-xsmall: 1rem;
+  --font-small: 1.2rem;
+  --font-xsmall: 14px;
 }
 
 * {
@@ -19,5 +19,9 @@
   list-style: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=App.css.map */
