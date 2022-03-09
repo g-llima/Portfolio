@@ -63,6 +63,7 @@
 
 .card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .card__content__front__topics__list__item {
   padding: 2px 5px;
+  border-radius: 3px;
 }
 
 .card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .HTML__CARD {
