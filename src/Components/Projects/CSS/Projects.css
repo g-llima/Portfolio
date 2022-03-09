@@ -9,6 +9,28 @@
   color: var(--color-dark);
 }
 
+.projects .projects__content .projects__content__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+}
+
+.projects .projects__content .projects__content__filter .projects__content__filter__item {
+  padding: 2px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.projects .projects__content .projects__content__filter .active__filter {
+  color: white;
+  background: var(--color-red);
+}
+
 .projects .projects__content .projects__content__items {
   margin: 2rem 0;
   display: -webkit-box;
