@@ -37,7 +37,7 @@
     margin: 10rem auto 0 auto;
 
     .about__content__left {
-      flex-basis: 60%;
+      flex-basis: 50%;
       padding: 0 2rem;
 
       h2 {
@@ -48,7 +48,7 @@
       p {
         margin-top: 2rem;
         letter-spacing: 2px;
-        font-size: var(--font-small);
+        font-size: var(--font-xsmall);
       }
     }
     .about__content__right {
