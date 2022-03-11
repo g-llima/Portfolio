@@ -1,7 +1,7 @@
 .card {
   position: relative;
-  margin: 1rem;
-  width: 300px;
+  margin: 1.2rem;
+  width: 310px;
   height: 400px;
 
   .card__content {
@@ -27,6 +27,7 @@
         width: 100%;
         object-fit: cover;
         height: 60%;
+        box-shadow: 0px 1px 3px 1px #dbdbdb85;
         border-end-end-radius: 40%;
       }
 
@@ -45,11 +46,11 @@
         .card__content__front__topics__list {
           font-size: 12px;
           display: flex;
-          justify-content: space-evenly;
 
           .card__content__front__topics__list__item {
             padding: 2px 5px;
             border-radius: 3px;
+            margin-right: 10px;
           }
 
           .HTML__CARD {
@@ -62,13 +63,48 @@
             background: #264de4;
           }
 
-          .REACT__CARD {
+          .React__CARD {
             color: white;
             background: #4ad5ff;
           }
 
-          .JavaScript__CARD {
+          .JS__CARD {
             background: #f7e018;
+          }
+
+          .Firebase__CARD {
+            background: #fec400;
+            color: #333;
+          }
+
+          .Bootstrap__CARD {
+            background: #850afb;
+            color: white;
+          }
+
+          .SASS__CARD {
+            background: #ce679a;
+            color: white;
+          }
+
+          .TS__CARD {
+            background: #3178c6;
+            color: white;
+          }
+
+          .Angular__CARD {
+            background: #b52e31;
+            color: white;
+          }
+
+          .MySQL__CARD {
+            background: #1e4c68;
+            color: white;
+          }
+
+          .MongoDB__CARD {
+            background: #ededef;
+            color: #20303b;
           }
         }
       }
@@ -106,6 +142,40 @@
           }
         }
       }
+
+      .card__content__back__dev {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          transition: all 0.2s;
+
+          &:hover {
+            color: var(--color-red);
+            transform: scale(1.2);
+          }
+        }
+
+        i {
+          margin-top: 2rem;
+          font-size: var(--font-large);
+          animation: 5s rotateGear infinite linear;
+          transition: all 0.2s;
+
+          &:hover {
+            color: var(--color-red);
+          }
+        }
+      }
     }
+  }
+}
+@keyframes rotateGear {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

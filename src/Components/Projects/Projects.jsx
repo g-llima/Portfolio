@@ -5,44 +5,109 @@ import Card from "./Card/Card";
 
 const cards = [
   {
-    title: "Lorem ipsum dolor",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-    topics: ["HTML", "CSS", "REACT", "JavaScript"],
-    img: "https://files.tecnoblog.net/meiobit/wp-content/uploads/2021/09/lost-in-random-001.jpg",
-    github: "https://github.com/g-llima",
+    title: "Website de teste",
+    description: "Projeto para aprender e testar novas tecnologias.",
+    topics: ["CSS", "React", "JS"],
+    img: "/imgs/Brand.png",
+    github: "https://github.com/g-llima/template1-website",
     website: "#",
   },
   {
-    title: "Lorem ipsum dolor",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.2",
-    topics: ["CSS", "JavaScript"],
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Android_TV_game_controller.jpg/1200px-Android_TV_game_controller.jpg",
-    github: "https://github.com/g-llima",
+    title: "PUCRS Store - Clone",
+    description:
+      "Réplica das principais funcionalidades e designs da loja virtual da PUCRS.",
+    topics: ["CSS", "React", "JS", "Firebase"],
+    img: "/imgs/PUCRS Store.png",
+    github: "https://github.com/g-llima/PUCRS_Store_clone",
     website: "#",
   },
   {
-    title: "Lorem ipsum dolor",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-    topics: ["HTML", "CSS", "REACT", "JavaScript"],
-    img: "https://cdnportal.mobalytics.gg/production/2021/06/64779e0a-league-of-legends-game-bg.png",
-    github: "https://github.com/g-llima",
+    title: "HEAT",
+    description: "Website de previsão do tempo para qualquer cidade do mundo.",
+    topics: ["CSS", "JS"],
+    img: "/imgs/HEAT.png",
+    github: "https://github.com/g-llima/Heat-Website",
     website: "#",
+  },
+  {
+    title: "Instagram - Clone",
+    description: "Réplica das funcionalidades básicas do Instagram.",
+    topics: ["CSS", "React", "JS", "Firebase"],
+    img: "/imgs/Instagram.png",
+    github: "https://github.com/g-llima/instagram_clone",
+    website: "#",
+  },
+  {
+    title: "Website Bootstrap",
+    description: "Projeto para aprender os princípios básicos do Bootstrap.",
+    topics: ["CSS", "Bootstrap"],
+    img: "/imgs/Bootstrap.png",
+    github: "https://github.com/g-llima/Website-bootstrap",
+    website: "#",
+  },
+  {
+    title: "Portfolio",
+    description: "Website para mostrar os meus projetos.",
+    topics: ["SASS", "React", "JS"],
+    img: "/imgs/Portfolio.png",
+    github: "https://github.com/g-llima/Portfolio",
+    website: "#",
+  },
+  {
+    title: "Task Tracker",
+    description: "Projeto para aprender os princípios básicos do Angular.",
+    topics: ["SASS", "Angular", "TS"],
+    img: "/imgs/Task Tracker.png",
+    github: "https://github.com/g-llima/Portfolio",
+    website: "#",
+  },
+  {
+    title: "Conecti.me - Clone",
+    description: "Réplica dos principais designs do site Conecti.me.",
+    topics: ["CSS", "React", "JS"],
+    img: "/imgs/Conecti.me.png",
+    github: "https://github.com/g-llima/Portfolio",
+    website: "#",
+  },
+  {
+    title: "Bookmark",
+    description: "Projeto para aprender e testar novos designs.",
+    topics: ["CSS", "React", "JS", "MySQL"],
+    img: "/imgs/Bookmark.png",
+    github: "https://github.com/g-llima/Portfolio",
+    website: "#",
+  },
+  {
+    title: "TECHNO",
+    description: "Projeto blog CRUD - EM DESENVOLVIMENTO ",
+    topics: ["SASS", "React", "TS", "MongoDB"],
+    img: "/imgs/Blog.png",
+    github: "https://github.com/g-llima/Portfolio",
+    website: "#",
+    isDev: true,
+  },
+  {
+    title: "Ecommerce",
+    description: "Website ecommerce (loja virtual) - EM DESENVOLVIMENTO ",
+    topics: ["CSS", "React", "JS"],
+    img: "/imgs/Ecommerce.png",
+    github: "https://github.com/g-llima/Portfolio",
+    website: "#",
+    isDev: true,
   },
 ];
 
 const filters = [
-  {
-    text: "HTML",
-  },
-  {
-    text: "CSS",
-  },
-  {
-    text: "JavaScript",
-  },
-  {
-    text: "REACT",
-  },
+  "CSS",
+  "SASS",
+  "JS",
+  "TS",
+  "React",
+  "Angular",
+  "Firebase",
+  "MySQL",
+  "Bootstrap",
+  "MongoDB",
 ];
 
 function filterByTopic(element, topic) {
@@ -82,7 +147,7 @@ function Projects() {
                 setActiveBtn(index);
               }}
             >
-              {item.text}
+              {item}
             </li>
           ))}
         </ul>
@@ -96,6 +161,7 @@ function Projects() {
               img={item.img}
               github={item.github}
               website={item.website}
+              isDev={item.isDev}
             />
           ))}
         </div>

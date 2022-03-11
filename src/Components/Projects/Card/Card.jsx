@@ -2,7 +2,15 @@ import React from "react";
 
 import "./CSS/Card.css";
 
-function Card({ title, description, topics, img, github, website }) {
+function Card({
+  title,
+  description,
+  topics,
+  img,
+  github,
+  website,
+  isDev = false,
+}) {
   return (
     <div className="card">
       <div className="card__content">
@@ -24,14 +32,21 @@ function Card({ title, description, topics, img, github, website }) {
           </div>
         </div>
         <div className="card__content__back">
-          <div className="card__content__back__icons">
-            <a href={website} target="__blank">
-              <i className="fas fa-external-link"></i>
-            </a>
-            <a href={github} target="__blank">
-              <i className="fab fa-github"></i>
-            </a>
-          </div>
+          {!isDev ? (
+            <div className="card__content__back__icons">
+              <a href={website} target="__blank">
+                <i className="fas fa-external-link"></i>
+              </a>
+              <a href={github} target="__blank">
+                <i className="fab fa-github"></i>
+              </a>
+            </div>
+          ) : (
+            <div className="card__content__back__dev">
+              <h2>Desenvolvendo</h2>
+              <i className="fal fa-cog"></i>
+            </div>
+          )}
         </div>
       </div>
     </div>

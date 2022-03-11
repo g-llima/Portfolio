@@ -1,7 +1,7 @@
 .card {
   position: relative;
-  margin: 1rem;
-  width: 300px;
+  margin: 1.2rem;
+  width: 310px;
   height: 400px;
 }
 
@@ -36,6 +36,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   height: 60%;
+  -webkit-box-shadow: 0px 1px 3px 1px #dbdbdb85;
+          box-shadow: 0px 1px 3px 1px #dbdbdb85;
   border-end-end-radius: 40%;
 }
 
@@ -57,14 +59,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .card__content__front__topics__list__item {
   padding: 2px 5px;
   border-radius: 3px;
+  margin-right: 10px;
 }
 
 .card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .HTML__CARD {
@@ -77,13 +77,48 @@
   background: #264de4;
 }
 
-.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .REACT__CARD {
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .React__CARD {
   color: white;
   background: #4ad5ff;
 }
 
-.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .JavaScript__CARD {
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .JS__CARD {
   background: #f7e018;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .Firebase__CARD {
+  background: #fec400;
+  color: #333;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .Bootstrap__CARD {
+  background: #850afb;
+  color: white;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .SASS__CARD {
+  background: #ce679a;
+  color: white;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .TS__CARD {
+  background: #3178c6;
+  color: white;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .Angular__CARD {
+  background: #b52e31;
+  color: white;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .MySQL__CARD {
+  background: #1e4c68;
+  color: white;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .MongoDB__CARD {
+  background: #ededef;
+  color: #20303b;
 }
 
 .card .card__content .card__content__back {
@@ -140,5 +175,64 @@
 .card .card__content .card__content__back .card__content__back__icons a i:hover {
   color: var(--color-red);
   font-size: var(--font-xlarge);
+}
+
+.card .card__content .card__content__back .card__content__back__dev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card__content .card__content__back .card__content__back__dev h2 {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card .card__content .card__content__back .card__content__back__dev h2:hover {
+  color: var(--color-red);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card .card__content .card__content__back .card__content__back__dev i {
+  margin-top: 2rem;
+  font-size: var(--font-large);
+  -webkit-animation: 5s rotateGear infinite linear;
+          animation: 5s rotateGear infinite linear;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card .card__content .card__content__back .card__content__back__dev i:hover {
+  color: var(--color-red);
+}
+
+@-webkit-keyframes rotateGear {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateGear {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=Card.css.map */
