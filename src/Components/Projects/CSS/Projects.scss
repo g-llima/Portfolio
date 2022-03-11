@@ -14,17 +14,28 @@
       flex-wrap: wrap;
       margin: 2rem auto;
       justify-content: space-evenly;
+      align-items: center;
       width: 80%;
 
       .projects__content__filter__item {
         padding: 2px 10px;
+        margin: 1rem 0;
         border-radius: 20px;
         cursor: pointer;
+        transition: all 0.1s ease-in;
+
+        &:hover {
+          color: var(--color-red);
+        }
       }
 
       .active__filter {
         color: white;
         background: var(--color-red);
+
+        &:hover {
+          color: white;
+        }
       }
     }
 
