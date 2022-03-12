@@ -15,7 +15,11 @@ function Card({
     <div className="card">
       <div className="card__content">
         <div className="card__content__front">
-          <img className="card__content__front__img" src={img} alt={title} />
+          <img
+            className={`card__content__front__img ${isDev ? "blur" : null}`}
+            src={img}
+            alt={title}
+          />
           <h3 className="card__content__front__title">{title}</h3>
           <p className="card__content__front__desc">{description}</p>
           <div className="card__content__front__topics">

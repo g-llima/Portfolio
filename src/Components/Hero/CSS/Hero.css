@@ -23,16 +23,35 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--color-red);
 }
 
 .hero .hero__content a {
   color: var(--color-red);
 }
 
-.hero .hero__content h1 {
+.hero .hero__content .hero__content__name {
   text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-red);
   font-size: var(--font-xlarge);
+  position: relative;
+  -webkit-animation: shrink 3s ease-in-out forwards;
+          animation: shrink 3s ease-in-out forwards;
+}
+
+.hero .hero__content .hero__content__name::before {
+  content: "GABRIEL LIMA";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  white-space: nowrap;
+  color: var(--color-red);
+  -webkit-text-stroke: 0px var(--color-red);
+  overflow: hidden;
+  -webkit-animation: show 3s ease-in-out forwards;
+          animation: show 3s ease-in-out forwards;
 }
 
 .hero .hero__content h2 {
@@ -104,6 +123,54 @@
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes show {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes shrink {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    bottom: 30px;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    bottom: 30px;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    bottom: 0;
   }
 }
 

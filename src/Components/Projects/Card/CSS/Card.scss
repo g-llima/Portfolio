@@ -31,6 +31,10 @@
         border-end-end-radius: 40%;
       }
 
+      .blur {
+        filter: blur(3px);
+      }
+
       .card__content__front__title {
         padding: 1rem 1rem 0 1rem;
       }

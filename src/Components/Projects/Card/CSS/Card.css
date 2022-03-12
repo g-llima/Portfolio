@@ -41,6 +41,11 @@
   border-end-end-radius: 40%;
 }
 
+.card .card__content .card__content__front .blur {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
 .card .card__content .card__content__front .card__content__front__title {
   padding: 1rem 1rem 0 1rem;
 }
