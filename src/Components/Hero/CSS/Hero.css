@@ -35,8 +35,8 @@
   -webkit-text-stroke: 1px var(--color-red);
   font-size: var(--font-xlarge);
   position: relative;
-  -webkit-animation: shrink 3s ease-in-out forwards;
-          animation: shrink 3s ease-in-out forwards;
+  -webkit-animation: shrink 1s ease-in-out forwards;
+          animation: shrink 1s ease-in-out forwards;
 }
 
 .hero .hero__content .hero__content__name::before {
@@ -50,20 +50,29 @@
   color: var(--color-red);
   -webkit-text-stroke: 0px var(--color-red);
   overflow: hidden;
-  -webkit-animation: show 3s ease-in-out forwards;
-          animation: show 3s ease-in-out forwards;
+  -webkit-animation: titleAnim 1s ease-in-out forwards;
+          animation: titleAnim 1s ease-in-out forwards;
 }
 
 .hero .hero__content h2 {
   color: var(--color-beige);
   text-align: center;
+  position: relative;
+  opacity: 0;
+  -webkit-animation: webDevAnim 0.8s ease-out forwards;
+          animation: webDevAnim 0.8s ease-out forwards;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .hero .hero__content i {
   margin-top: 2rem;
+  opacity: 0;
   font-size: var(--font-medium);
-  -webkit-animation: pulse 4s infinite;
-          animation: pulse 4s infinite;
+  -webkit-animation: show 2s ease-out forwards, pulse 4s infinite;
+          animation: show 2s ease-out forwards, pulse 4s infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   border-radius: 50%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -87,7 +96,12 @@
   font-size: var(--font-small);
   -webkit-animation: none;
           animation: none;
+  opacity: 0;
   color: var(--color-red);
+  -webkit-animation: show 0.5s forwards;
+          animation: show 0.5s forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .hero .hero__content .hero__content__links i:hover {
@@ -126,7 +140,7 @@
   }
 }
 
-@-webkit-keyframes show {
+@-webkit-keyframes titleAnim {
   0% {
     width: 0;
   }
@@ -135,12 +149,52 @@
   }
 }
 
-@keyframes show {
+@keyframes titleAnim {
   0% {
     width: 0;
   }
   100% {
     width: 100%;
+  }
+}
+
+@-webkit-keyframes webDevAnim {
+  0% {
+    bottom: -3rem;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes webDevAnim {
+  0% {
+    bottom: -3rem;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
