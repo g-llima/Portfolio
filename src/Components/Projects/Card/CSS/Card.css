@@ -29,6 +29,7 @@
   color: var(--color-dark);
   -webkit-box-shadow: 2px 2px 3px 3px #dbdbdb;
           box-shadow: 2px 2px 3px 3px #dbdbdb;
+  background: white;
 }
 
 .card .card__content .card__content__front .card__content__front__img {
@@ -145,6 +146,7 @@
           transform: rotateY(180deg);
   -webkit-box-shadow: 2px 2px 3px 3px #dbdbdb;
           box-shadow: 2px 2px 3px 3px #dbdbdb;
+  background: white;
 }
 
 .card .card__content .card__content__back .card__content__back__icons {

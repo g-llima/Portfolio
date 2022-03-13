@@ -22,6 +22,7 @@
       backface-visibility: hidden;
       color: var(--color-dark);
       box-shadow: 2px 2px 3px 3px #dbdbdb;
+      background: white;
 
       .card__content__front__img {
         width: 100%;
@@ -123,6 +124,7 @@
       justify-content: center;
       transform: rotateY(180deg);
       box-shadow: 2px 2px 3px 3px #dbdbdb;
+      background: white;
 
       .card__content__back__icons {
         width: 80%;
