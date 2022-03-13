@@ -134,6 +134,17 @@
     bottom: 0;
   }
 }
+@media only screen and (max-width: 996px) {
+  .hero__content {
+    .hero__content__name {
+      color: var(--color-red) !important;
+
+      &::before {
+        animation: none !important;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 425px) {
   .hero {
     .content {

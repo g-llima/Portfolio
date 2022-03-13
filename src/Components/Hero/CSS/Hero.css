@@ -228,6 +228,16 @@
   }
 }
 
+@media only screen and (max-width: 996px) {
+  .hero__content .hero__content__name {
+    color: var(--color-red) !important;
+  }
+  .hero__content .hero__content__name::before {
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .hero .content h1 {
     font-size: var(--font-large);

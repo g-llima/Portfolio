@@ -7,6 +7,15 @@
       text-align: center;
       font-size: var(--font-large);
       color: var(--color-dark);
+      position: relative;
+      opacity: 0;
+      bottom: 20px;
+      transition: all 0.5s ease-out;
+
+      &.projects__show {
+        bottom: 0;
+        opacity: 1;
+      }
     }
 
     .projects__content__filter {
@@ -21,6 +30,7 @@
         padding: 2px 10px;
         margin: 1rem 0;
         border-radius: 20px;
+        opacity: 0;
         cursor: pointer;
         position: relative;
         transition: all 0.1s ease-in;
@@ -28,14 +38,58 @@
         &:hover {
           color: var(--color-red);
         }
-      }
 
-      .active__filter {
-        color: white;
-        background: var(--color-red);
-
-        &:hover {
+        &.active__filter {
           color: white;
+          background: var(--color-red);
+
+          &:hover {
+            color: white;
+          }
+        }
+        &.filter__show {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 0.6s;
+        }
+        &.filter__show__0 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 0.8s;
+        }
+        &.filter__show__1 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 1s;
+        }
+        &.filter__show__2 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 1.2s;
+        }
+        &.filter__show__3 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 1.4s;
+        }
+        &.filter__show__4 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 1.6s;
+        }
+        &.filter__show__5 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 1.8s;
+        }
+        &.filter__show__6 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 2s;
+        }
+        &.filter__show__7 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 2.2s;
+        }
+        &.filter__show__8 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 2.4s;
+        }
+        &.filter__show__9 {
+          animation: 1s showFilter ease-out forwards;
+          animation-delay: 2.6s;
         }
       }
     }
@@ -45,6 +99,23 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      opacity: 0;
+      transition: all 0.5s;
+      transition-delay: 3s;
+
+      &.projects__show {
+        opacity: 1;
+      }
     }
+  }
+}
+@keyframes showFilter {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
   }
 }

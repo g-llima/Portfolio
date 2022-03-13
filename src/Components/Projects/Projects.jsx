@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./CSS/Projects.css";
 
 import Card from "./Card/Card";
@@ -117,16 +117,34 @@ function filterByTopic(element, topic) {
 function Projects() {
   const [visibleProjects, setVisibleProjects] = useState(cards);
   const [activeBtn, setActiveBtn] = useState(-1);
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 1200 && animate === false) {
+        setAnimate(true);
+      }
+    });
+  }, []);
 
   return (
     <div className="projects">
       <div className="projects__content">
-        <h2 className="projects__content__title">Projetos</h2>
+        {/* TITLE */}
+        <h2
+          className={`projects__content__title ${
+            animate ? "projects__show" : null
+          }`}
+        >
+          Projetos
+        </h2>
+
         <ul className="projects__content__filter">
+          {/* "TODOS" FILTER */}
           <li
-            className={`projects__content__filter__item ${
-              activeBtn == -1 ? "active__filter" : null
-            }`}
+            className={`projects__content__filter__item 
+            ${activeBtn == -1 ? "active__filter" : null}
+            ${animate ? "filter__show" : null}`}
             onClick={() => {
               setVisibleProjects(cards);
               setActiveBtn(-1);
@@ -134,12 +152,14 @@ function Projects() {
           >
             Todos
           </li>
+
+          {/* FILTERS */}
           {filters.map((item, index) => (
             <li
               key={index}
-              className={`projects__content__filter__item ${
-                activeBtn == index ? "active__filter" : null
-              }`}
+              className={`projects__content__filter__item 
+              ${activeBtn == index ? "active__filter " : null}
+              ${animate ? "filter__show" : null}__${index}`}
               onClick={(e) => {
                 setVisibleProjects(
                   cards.filter((el) => filterByTopic(el, e.target.innerHTML))
@@ -151,7 +171,12 @@ function Projects() {
             </li>
           ))}
         </ul>
-        <div className="projects__content__items">
+
+        {/* PROJECTS */}
+        <div
+          className={`projects__content__items 
+          ${animate ? "projects__show" : null}`}
+        >
           {visibleProjects.map((item, index) => (
             <Card
               key={index}

@@ -72,8 +72,8 @@
 .about .about__content .about__content__left .about__content__left__text.about__showText {
   -webkit-animation: 5s showText ease-out forwards;
           animation: 5s showText ease-out forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .about .about__content .about__content__right {
