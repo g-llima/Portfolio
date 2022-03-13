@@ -37,8 +37,18 @@ function About() {
       <div className="about__big_triangle"></div>
       <div className="about__content">
         <div className="about__content__left">
-          <h2>Sobre mim</h2>
-          <p>
+          <h2
+            className={`about__content__left__title ${
+              animate ? "about__showTitle" : null
+            }`}
+          >
+            Sobre mim
+          </h2>
+          <p
+            className={`about__content__left__text ${
+              animate ? "about__showText" : null
+            }`}
+          >
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

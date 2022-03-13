@@ -58,27 +58,29 @@
 .slider .slider__content .slider__container .slider__container__fill.sl__0 {
   -webkit-animation: 3s sl0 forwards ease-out;
           animation: 3s sl0 forwards ease-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .slider .slider__content .slider__container .slider__container__fill.sl__1 {
   -webkit-animation: 3s sl1 forwards ease-out;
           animation: 3s sl1 forwards ease-out;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
 }
 
 .slider .slider__content .slider__container .slider__container__fill.sl__2 {
   -webkit-animation: 3s sl2 forwards ease-out;
           animation: 3s sl2 forwards ease-out;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .slider .slider__content .slider__container .slider__container__fill.sl__3 {
   -webkit-animation: 3s sl3 forwards ease-out;
           animation: 3s sl3 forwards ease-out;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
 }
 
 .slider .slider__content .slider__container::before {
