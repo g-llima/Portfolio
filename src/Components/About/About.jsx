@@ -7,7 +7,7 @@ import Slider from "../Slider/Slider";
 const slidersList = [
   {
     title: "HTML/CSS",
-    value: 99,
+    value: 100,
   },
   {
     title: "Javascript",

@@ -11,10 +11,7 @@ function Slider({ sliderList }) {
             <p className="slider__texts__value">{item.value}%</p>
           </div>
           <div className="slider__container">
-            <div
-              className="slider__container__fill"
-              style={{ width: item.value + "%" }}
-            ></div>
+            <div className={`slider__container__fill sl__${index}`}></div>
           </div>
         </div>
       ))}
