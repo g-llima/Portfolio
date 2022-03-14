@@ -33,7 +33,7 @@
       }
 
       .blur {
-        filter: blur(3px);
+        filter: grayscale(60%) blur(2px);
       }
 
       .card__content__front__title {
