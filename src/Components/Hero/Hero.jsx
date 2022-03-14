@@ -15,6 +15,11 @@ function Hero() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    let mouse = {
+      x: undefined,
+      y: undefined,
+    };
+    const maxRadius = 10;
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -23,6 +28,11 @@ function Hero() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       createCircles();
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      mouse.x = e.x;
+      mouse.y = e.y;
     });
 
     const c = canvas.getContext("2d");
@@ -34,6 +44,7 @@ function Hero() {
         this.dx = dx;
         this.dy = dy;
         this.radius = radius;
+        let minRadius = radius;
         let color = `rgb(${getRandomColor()})`;
 
         this.draw = () => {
@@ -58,6 +69,20 @@ function Hero() {
           }
           this.y += this.dy;
           this.x += this.dx;
+
+          // INTERACTIVITY
+          if (
+            mouse.x - this.x < 50 &&
+            mouse.x - this.x > -50 &&
+            mouse.y - this.y < 50 &&
+            mouse.y - this.y > -50
+          ) {
+            if (this.radius < maxRadius) {
+              this.radius += 0.5;
+            }
+          } else if (this.radius > minRadius) {
+            this.radius -= 0.5;
+          }
 
           this.draw();
         };
