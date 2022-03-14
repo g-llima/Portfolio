@@ -17,10 +17,6 @@ const slidersList = [
     title: "React",
     value: 70,
   },
-  {
-    title: "PHP",
-    value: 50,
-  },
 ];
 
 function About() {

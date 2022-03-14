@@ -113,6 +113,11 @@
           letter-spacing: 1px;
           text-align: center;
           font-size: var(--font-xsmall);
+          height: auto;
+
+          &.about__showText {
+            animation: none;
+          }
         }
       }
       .about__content__right {

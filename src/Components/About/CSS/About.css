@@ -124,6 +124,11 @@
     letter-spacing: 1px;
     text-align: center;
     font-size: var(--font-xsmall);
+    height: auto;
+  }
+  .about .about__content .about__content__left .about__content__left__text.about__showText {
+    -webkit-animation: none;
+            animation: none;
   }
   .about .about__content .about__content__right {
     -ms-flex-preferred-size: 100%;

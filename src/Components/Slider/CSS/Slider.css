@@ -76,13 +76,6 @@
           animation-delay: 2.2s;
 }
 
-.slider .slider__content .slider__container .slider__container__fill.sl__3 {
-  -webkit-animation: 3s sl3 forwards ease-out;
-          animation: 3s sl3 forwards ease-out;
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-}
-
 .slider .slider__content .slider__container::before {
   content: "0%";
   color: #c7c7c7;

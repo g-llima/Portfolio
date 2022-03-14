@@ -41,19 +41,14 @@
           animation-delay: 1.8s;
         }
         &.sl__1 {
-          // HTML - CSS
+          // JAVASCRIPT
           animation: 3s sl1 forwards ease-out;
           animation-delay: 2s;
         }
         &.sl__2 {
-          // HTML - CSS
+          // REACT
           animation: 3s sl2 forwards ease-out;
           animation-delay: 2.2s;
-        }
-        &.sl__3 {
-          // HTML - CSS
-          animation: 3s sl3 forwards ease-out;
-          animation-delay: 2.4s;
         }
       }
     }
