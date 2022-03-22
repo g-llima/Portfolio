@@ -5,12 +5,12 @@ import Card from "./Card/Card";
 
 const cards = [
   {
-    title: "Website de teste",
+    title: "React Website",
     description: "Projeto para aprender e testar novas tecnologias.",
     topics: ["CSS", "React", "JS"],
     img: "/imgs/Brand.png",
     github: "https://github.com/g-llima/template1-website",
-    website: "#",
+    website: "https://elated-payne-fb0e50.netlify.app",
   },
   {
     title: "PUCRS Store - Clone",
@@ -19,7 +19,7 @@ const cards = [
     topics: ["CSS", "React", "JS", "Firebase"],
     img: "/imgs/PUCRS Store.png",
     github: "https://github.com/g-llima/PUCRS_Store_clone",
-    website: "#",
+    website: "https://pucrs-store.web.app",
   },
   {
     title: "HEAT",
@@ -28,6 +28,7 @@ const cards = [
     img: "/imgs/HEAT.png",
     github: "https://github.com/g-llima/Heat-Website",
     website: "#",
+    onlyRepo: true,
   },
   {
     title: "Instagram - Clone",
@@ -35,7 +36,7 @@ const cards = [
     topics: ["CSS", "React", "JS", "Firebase"],
     img: "/imgs/Instagram.png",
     github: "https://github.com/g-llima/instagram_clone",
-    website: "#",
+    website: "https://instagram-clone-20fee.web.app",
   },
   {
     title: "Website Bootstrap",
@@ -43,7 +44,7 @@ const cards = [
     topics: ["CSS", "Bootstrap"],
     img: "/imgs/Bootstrap.png",
     github: "https://github.com/g-llima/Website-bootstrap",
-    website: "#",
+    website: "https://g-llima.github.io/Website-bootstrap/",
   },
   {
     title: "Portfolio",
@@ -58,31 +59,32 @@ const cards = [
     description: "Projeto para aprender os princípios básicos do Angular.",
     topics: ["SASS", "Angular", "TS"],
     img: "/imgs/Task Tracker.png",
-    github: "https://github.com/g-llima/Portfolio",
+    github: "https://github.com/g-llima/Task-Tracker",
     website: "#",
+    onlyRepo: true,
   },
   {
     title: "Conecti.me - Clone",
     description: "Réplica dos principais designs do site Conecti.me.",
     topics: ["CSS", "React", "JS"],
     img: "/imgs/Conecti.me.png",
-    github: "https://github.com/g-llima/Portfolio",
-    website: "#",
+    github: "https://github.com/g-llima/conecti.me_clone",
+    website: "https://nifty-curran-d3a08e.netlify.app",
   },
   {
     title: "Bookmark",
     description: "Projeto para aprender e testar novos designs.",
     topics: ["CSS", "React", "JS", "MySQL"],
     img: "/imgs/Bookmark.png",
-    github: "https://github.com/g-llima/Portfolio",
-    website: "#",
+    github: "https://github.com/g-llima/Bookmark-Website",
+    website: "https://heuristic-hoover-3d87b9.netlify.app",
   },
   {
     title: "TECHNO",
     description: "Projeto blog CRUD - EM DESENVOLVIMENTO ",
     topics: ["SASS", "React", "TS", "MongoDB"],
     img: "/imgs/Blog.png",
-    github: "https://github.com/g-llima/Portfolio",
+    github: "#",
     website: "#",
     isDev: true,
   },
@@ -91,7 +93,7 @@ const cards = [
     description: "Website ecommerce (loja virtual) - EM DESENVOLVIMENTO ",
     topics: ["CSS", "React", "JS"],
     img: "/imgs/Ecommerce.png",
-    github: "https://github.com/g-llima/Portfolio",
+    github: "#",
     website: "#",
     isDev: true,
   },
@@ -125,7 +127,7 @@ function Projects() {
         setAnimate(true);
       }
     });
-  }, []);
+  }, [animate]);
 
   return (
     <div className="projects">
@@ -143,7 +145,7 @@ function Projects() {
           {/* "TODOS" FILTER */}
           <li
             className={`projects__content__filter__item 
-            ${activeBtn == -1 ? "active__filter" : null}
+            ${activeBtn === -1 ? "active__filter" : null}
             ${animate ? "filter__show" : null}`}
             onClick={() => {
               setVisibleProjects(cards);
@@ -158,7 +160,7 @@ function Projects() {
             <li
               key={index}
               className={`projects__content__filter__item 
-              ${activeBtn == index ? "active__filter " : null}
+              ${activeBtn === index ? "active__filter " : null}
               ${animate ? "filter__show" : null}__${index}`}
               onClick={(e) => {
                 setVisibleProjects(
@@ -187,6 +189,7 @@ function Projects() {
               github={item.github}
               website={item.website}
               isDev={item.isDev}
+              onlyRepo={item.onlyRepo}
             />
           ))}
         </div>

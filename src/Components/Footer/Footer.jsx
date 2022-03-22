@@ -20,20 +20,20 @@ function Footer() {
         <div className="footer__content">
           <div className="footer__content__information">
             <p>
-              Gabriel Lima <i className="fal fa-user-alt"></i>
+              Gabriel Lima <i className="fa-solid fa-user"></i>
             </p>
             <p>
-              55 (51) 98429-2998 <i className="fal fa-phone"></i>
+              55 (51) 98429-2998 <i className="fa-solid fa-phone"></i>
             </p>
             <p>
-              gabrielrtxon@gmail.com <i className="fal fa-envelope"></i>
+              gabrielrtxon@gmail.com <i className="fa-solid fa-envelope"></i>
             </p>
           </div>
           <p className="footer__content__copy">
             Copyright &copy; 2022, Portfolio - Gabriel Lima
           </p>
           <a href="#" className="btnUP">
-            <i className="fal fa-arrow-circle-up"></i>
+            <i className="fa-solid fa-circle-arrow-up"></i>
           </a>
         </div>
       </footer>

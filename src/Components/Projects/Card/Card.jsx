@@ -10,6 +10,7 @@ function Card({
   github,
   website,
   isDev = false,
+  onlyRepo = false,
 }) {
   return (
     <div className="card">
@@ -38,9 +39,11 @@ function Card({
         <div className="card__content__back">
           {!isDev ? (
             <div className="card__content__back__icons">
-              <a href={website} target="__blank">
-                <i className="fas fa-external-link"></i>
-              </a>
+              {!onlyRepo && (
+                <a href={website} target="__blank">
+                  <i className="fas fa-external-link"></i>
+                </a>
+              )}
               <a href={github} target="__blank">
                 <i className="fab fa-github"></i>
               </a>
@@ -48,7 +51,7 @@ function Card({
           ) : (
             <div className="card__content__back__dev">
               <h2>Desenvolvendo</h2>
-              <i className="fal fa-cog"></i>
+              <i className="fa-solid fa-gear"></i>
             </div>
           )}
         </div>

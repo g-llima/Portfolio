@@ -121,7 +121,7 @@ function Hero() {
         <h1 className="hero__content__name">GABRIEL LIMA</h1>
         <h2>WEB DEVELOPER</h2>
         <Link to="#about">
-          <i className="fal fa-arrow-circle-down"></i>
+          <i className="fa-solid fa-circle-arrow-down"></i>
         </Link>
 
         <div className="hero__content__links">
