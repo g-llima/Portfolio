@@ -82,8 +82,8 @@ const cards = [
   },
   {
     title: "TECHNO",
-    description: "Website ecommerce (loja virtual) - EM DESENVOLVIMENTO ",
-    topics: ["CSS", "React", "JS"],
+    description: "Website ecommerce (loja virtual).",
+    topics: ["CSS", "React", "JS", "MongoDB"],
     img: "/imgs/Ecommerce.png",
     github: "https://github.com/g-llima/E-commerce_Website",
     website: "https://legendary-piroshki-3b954e.netlify.app",
