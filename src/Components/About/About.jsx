@@ -45,13 +45,10 @@ function About() {
               animate ? "about__showText" : null
             }`}
           >
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            Estudante de Engenharia de Software pela Pontifícia Universidade
+            Católica do Rio Grande do Sul (PUCRS), busco sempre me manter em
+            constante aprendizado e aberto para novas tecnologias e
+            conhecimentos na área da programação.
           </p>
         </div>
         <div className="about__content__right">

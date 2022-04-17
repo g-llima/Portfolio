@@ -53,6 +53,7 @@ const cards = [
     img: "/imgs/Portfolio.png",
     github: "https://github.com/g-llima/Portfolio",
     website: "#",
+    onlyRepo: true,
   },
   {
     title: "Task Tracker",
