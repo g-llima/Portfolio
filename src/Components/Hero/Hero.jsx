@@ -118,7 +118,7 @@ function Hero() {
     <div className="hero">
       <canvas ref={canvasRef}></canvas>
       <div className="hero__content">
-        <h1 className="hero__content__name">GABRIEL LIMA</h1>
+        <h1 className="hero__content__name">GABRIEL SILVA</h1>
         <h2>DESENVOLVEDOR WEB</h2>
         <Link to="#about">
           <i className="fa-solid fa-circle-arrow-down"></i>

@@ -10,7 +10,7 @@ const cards = [
     topics: ["CSS", "React", "JS"],
     img: "/imgs/Brand.png",
     github: "https://github.com/g-llima/template1-website",
-    website: "https://elated-payne-fb0e50.netlify.app",
+    website: "https://classy-sorbet-414eb6.netlify.app",
   },
   {
     title: "PUCRS Store - Clone",
@@ -74,8 +74,8 @@ const cards = [
   },
   {
     title: "Bookmark",
-    description: "Projeto para aprender e testar novos designs.",
-    topics: ["CSS", "React", "JS", "MySQL"],
+    description: "Projeto para aprender e testar novas ferramentas.",
+    topics: ["CSS", "React", "JS"],
     img: "/imgs/Bookmark.png",
     github: "https://github.com/g-llima/Bookmark-Website",
     website: "https://heuristic-hoover-3d87b9.netlify.app",
@@ -107,7 +107,6 @@ const filters = [
   "React",
   "Angular",
   "Firebase",
-  "MySQL",
   "Bootstrap",
   "MongoDB",
 ];

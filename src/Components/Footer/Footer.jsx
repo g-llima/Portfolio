@@ -20,13 +20,14 @@ function Footer() {
         <div className="footer__content">
           <div className="footer__content__information">
             <p>
-              Gabriel Lima <i className="fa-solid fa-user"></i>
+              Gabriel Silva <i className="fa-solid fa-user"></i>
             </p>
             <p>
               55 (51) 98429-2998 <i className="fa-solid fa-phone"></i>
             </p>
             <p>
-              gabrielrtxon@gmail.com <i className="fa-solid fa-envelope"></i>
+              silvagabriel.limars@gmail.com{" "}
+              <i className="fa-solid fa-envelope"></i>
             </p>
           </div>
           <p className="footer__content__copy">
