@@ -81,22 +81,7 @@
       height: 150px;
     }
 
-    &.blob2 {
-      top: 70%;
-      left: -5%;
-      width: 250px;
-      height: 250px;
-    }
-
     animation: blob1Anim 20s ease-in-out infinite;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .blob2 {
-    top: 85% !important;
-    left: 0% !important;
-    width: 130px !important;
-    height: 130px !important;
   }
 }
 @media only screen and (max-width: 749px) {
@@ -126,10 +111,6 @@
     }
     .blob1 {
       top: 12% !important;
-    }
-
-    .blob2 {
-      display: none;
     }
   }
 }
