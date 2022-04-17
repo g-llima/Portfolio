@@ -49,8 +49,11 @@ function About() {
             Católica do Rio Grande do Sul (PUCRS), busco sempre me manter em
             constante aprendizado e aberto para novas tecnologias e
             conhecimentos na área da programação.
+            <br />
+            <i className="fa-solid fa-code"></i>
           </p>
         </div>
+
         <div className="about__content__right">
           <Slider sliderList={slidersList} />
         </div>
