@@ -25,6 +25,7 @@
       -webkit-text-stroke: 1px var(--color-red);
       font-size: var(--font-xlarge);
       position: relative;
+      white-space: nowrap;
       animation: shrink 1s ease-in-out forwards;
 
       &::before {
@@ -142,6 +143,14 @@
       &::before {
         animation: none !important;
       }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero__content {
+    .hero__content__name {
+      color: var(--color-red) !important;
+      white-space: normal !important;
     }
   }
 }
