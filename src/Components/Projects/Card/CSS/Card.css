@@ -11,8 +11,8 @@
   height: 100%;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .card .card__content:hover {
@@ -29,7 +29,7 @@
   color: var(--color-dark);
   -webkit-box-shadow: 2px 2px 3px 3px #dbdbdb;
           box-shadow: 2px 2px 3px 3px #dbdbdb;
-  background: white;
+  background: red;
 }
 
 .card .card__content .card__content__front .card__content__front__img {

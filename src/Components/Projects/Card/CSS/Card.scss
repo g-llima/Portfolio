@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-out;
 
     &:hover {
       transform: rotateY(180deg);
@@ -22,7 +22,7 @@
       backface-visibility: hidden;
       color: var(--color-dark);
       box-shadow: 2px 2px 3px 3px #dbdbdb;
-      background: white;
+      background: red;
 
       .card__content__front__img {
         width: 100%;
