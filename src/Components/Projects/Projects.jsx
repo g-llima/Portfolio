@@ -128,7 +128,6 @@ function filterByTopic(element, topic) {
 
 function Projects() {
   const [visibleProjects, setVisibleProjects] = useState(cards);
-  const [activeBtn, setActiveBtn] = useState(-1);
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -154,6 +153,7 @@ function Projects() {
         <ul className="projects__content__filter">
           <li>
             <select
+              className="projects__content__filter__item"
               onChange={(e) => {
                 if (e.target.value == "Todos") {
                   setVisibleProjects(cards);
@@ -172,38 +172,6 @@ function Projects() {
             </select>
           </li>
         </ul>
-        {/* <ul className="projects__content__filter">
-          {/* "TODOS" FILTER *}
-          <li
-            className={`projects__content__filter__item 
-            ${activeBtn === -1 ? "active__filter" : null}
-            ${animate ? "filter__show" : null}`}
-            onClick={() => {
-              setVisibleProjects(cards);
-              setActiveBtn(-1);
-            }}
-          >
-            Todos
-          </li>
-
-          {/* FILTERS *}
-          {filters.map((item, index) => (
-            <li
-              key={index}
-              className={`projects__content__filter__item 
-              ${activeBtn === index ? "active__filter " : null}
-              ${animate ? "filter__show" : null}__${index}`}
-              onClick={(e) => {
-                setVisibleProjects(
-                  cards.filter((el) => filterByTopic(el, e.target.innerHTML))
-                );
-                setActiveBtn(index);
-              }}
-            >
-              {item}
-            </li>
-          ))}
-        </ul> */}
 
         {/* PROJECTS */}
         <div

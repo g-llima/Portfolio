@@ -43,19 +43,7 @@
   position: relative;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
-}
-
-.projects .projects__content .projects__content__filter .projects__content__filter__item:hover {
-  color: var(--color-red);
-}
-
-.projects .projects__content .projects__content__filter .projects__content__filter__item.active__filter {
-  color: white;
-  background: var(--color-red);
-}
-
-.projects .projects__content .projects__content__filter .projects__content__filter__item.active__filter:hover {
-  color: white;
+  outline: none;
 }
 
 .projects .projects__content .projects__content__items {

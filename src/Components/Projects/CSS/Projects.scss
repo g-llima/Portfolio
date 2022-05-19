@@ -33,19 +33,7 @@
         cursor: pointer;
         position: relative;
         transition: all 0.1s ease-in;
-
-        &:hover {
-          color: var(--color-red);
-        }
-
-        &.active__filter {
-          color: white;
-          background: var(--color-red);
-
-          &:hover {
-            color: white;
-          }
-        }
+        outline: none;
       }
     }
 
