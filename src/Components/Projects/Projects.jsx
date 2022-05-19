@@ -108,6 +108,7 @@ const cards = [
 ];
 
 const filters = [
+  "Todos",
   "CSS",
   "SASS",
   "JS",
@@ -151,7 +152,28 @@ function Projects() {
         </h2>
 
         <ul className="projects__content__filter">
-          {/* "TODOS" FILTER */}
+          <li>
+            <select
+              onChange={(e) => {
+                if (e.target.value == "Todos") {
+                  setVisibleProjects(cards);
+                } else {
+                  setVisibleProjects(
+                    cards.filter((el) => filterByTopic(el, e.target.value))
+                  );
+                }
+              }}
+            >
+              {filters.map((item, index) => (
+                <option key={index} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </li>
+        </ul>
+        {/* <ul className="projects__content__filter">
+          {/* "TODOS" FILTER *}
           <li
             className={`projects__content__filter__item 
             ${activeBtn === -1 ? "active__filter" : null}
@@ -164,7 +186,7 @@ function Projects() {
             Todos
           </li>
 
-          {/* FILTERS */}
+          {/* FILTERS *}
           {filters.map((item, index) => (
             <li
               key={index}
@@ -181,7 +203,7 @@ function Projects() {
               {item}
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         {/* PROJECTS */}
         <div
