@@ -59,8 +59,6 @@
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
 }
 
 .projects .projects__content .projects__content__items.projects__show {

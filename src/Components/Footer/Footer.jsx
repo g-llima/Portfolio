@@ -12,7 +12,7 @@ function Footer() {
       >
         <path
           fill="#191919"
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,256L289,64L576,128L864,160L1152,96L1440,64L1440,320L1152,320L864,320L576,320L288,320L0,320Z"
         ></path>
       </svg>
