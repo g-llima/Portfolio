@@ -122,6 +122,12 @@
   color: white;
 }
 
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .PHP__CARD {
+  background: #B0B3D6;
+  font-weight: bold;
+  color: #474A8A;
+}
+
 .card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .MongoDB__CARD {
   background: #ededef;
   color: #20303b;

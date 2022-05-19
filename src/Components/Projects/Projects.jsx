@@ -67,10 +67,18 @@ const cards = [
   {
     title: "Conecti.me - Clone",
     description: "Réplica dos principais designs do site Conecti.me.",
-    topics: ["CSS", "React", "JS"],
+    topics: ["CSS", "React", "JS", "MongoDB"],
     img: "/imgs/Conecti.me.png",
-    github: "https://github.com/g-llima/conecti.me_clone",
+    github: "https://github.com/g-llima/E-commerce_Website",
     website: "https://nifty-curran-d3a08e.netlify.app",
+  },
+  {
+    title: "CRUD - PHP",
+    description: "Website CRUD em php utilizando apache.",
+    topics: ["PHP", "Bootstrap", "MySQL"],
+    img: "/imgs/Crud_PHP.png",
+    github: "https://github.com/g-llima/CRUD-PHP",
+    onlyRepo: true,
   },
   {
     title: "Bookmark",
@@ -109,6 +117,8 @@ const filters = [
   "Firebase",
   "Bootstrap",
   "MongoDB",
+  "MySQL",
+  "PHP",
 ];
 
 function filterByTopic(element, topic) {
