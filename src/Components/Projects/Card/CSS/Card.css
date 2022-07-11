@@ -29,7 +29,6 @@
   color: var(--color-dark);
   -webkit-box-shadow: 2px 2px 3px 3px #dbdbdb;
           box-shadow: 2px 2px 3px 3px #dbdbdb;
-  background: red;
 }
 
 .card .card__content .card__content__front .card__content__front__img {
@@ -131,6 +130,11 @@
 .card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .MongoDB__CARD {
   background: #ededef;
   color: #20303b;
+}
+
+.card .card__content .card__content__front .card__content__front__topics .card__content__front__topics__list .Java__CARD {
+  background: #ff4b4b;
+  color: white;
 }
 
 .card .card__content .card__content__back {

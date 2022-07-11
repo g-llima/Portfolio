@@ -97,6 +97,14 @@ const cards = [
     website: "https://legendary-piroshki-3b954e.netlify.app",
   },
   {
+    title: "GEATS",
+    description: "Website ecommerce de restaurante",
+    topics: ["SASS", "Angular", "TS", "Java"],
+    img: "/imgs/geats.png",
+    github: "https://github.com/g-llima/G-EATS",
+    website: "https://whimsical-kitsune-517156.netlify.app",
+  },
+  {
     title: "BLOG",
     description: "Projeto blog CRUD - EM DESENVOLVIMENTO ",
     topics: ["SASS", "React", "TS", "MongoDB"],
@@ -120,6 +128,7 @@ const filters = [
   "MongoDB",
   "MySQL",
   "PHP",
+  "Java",
 ];
 
 function filterByTopic(element, topic) {
